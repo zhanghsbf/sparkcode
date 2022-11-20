@@ -1,0 +1,5 @@
+package clean
+
+class CleannerMaker {
+
+}
