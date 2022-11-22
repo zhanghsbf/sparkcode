@@ -1,5 +1,0 @@
-package clean
-
-class CleannerMaker {
-
-}

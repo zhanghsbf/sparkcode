@@ -1,12 +1,14 @@
+import common.ApplicationContext
 import org.apache.spark.rdd.RDD
+import org.apache.spark.sql.SparkSession
 import org.apache.spark.{SparkConf, SparkContext}
 
 object WordCount{
   def main(args: Array[String]):Unit = {
-    // spark配置新建
-    val sparkConf = new SparkConf().setAppName("Operator")
-    // spark上下文对象
-    val spark: SparkContext = SparkContext.getOrCreate(sparkConf)
+
+    val session: SparkSession = SparkSession.builder().appName("zyk-spark-extract").enableHiveSupport().getOrCreate()
+    val spark: SparkContext = session.sparkContext
+
 
     // wordcount逻辑开始
     val inPath: String = "hdfs:///user/zhangykun0508/exe.log"

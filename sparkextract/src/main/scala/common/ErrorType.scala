@@ -1,5 +1,8 @@
 package common
 
+/**
+ * 错误内容结尾需用 _ERR
+ */
 object ErrorType extends Serializable {
   // 空串错误
   val JSON_BLANK_ERR:String = "JSON_BLANK_ERR"
@@ -10,6 +13,9 @@ object ErrorType extends Serializable {
   // 缺失事件名错误
   val JSON_LACK_EVENT_NAME_ERR:String = "JSON_LACK_EVENT_NAME_ERR"
 
+  // 缺失类型错误错误
+  val JSON_LACK_SCHEMA_ERR:String = "JSON_LACK_SCHEMA_ERR"
+
   // 字段数量不一致错误
   val JSON_FIELD_NUM_ERR:String = "JSON_FIELD_NUM_ERR"
 
@@ -18,6 +24,7 @@ object ErrorType extends Serializable {
 
   // 字段类型错误
   val JSON_FIELD_TYP_ERR:String = "JSON_FIELD_TYP_ERR"
+
 
 }
 

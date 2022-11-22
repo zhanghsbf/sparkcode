@@ -1,5 +1,9 @@
 */target/
 .idea/
+data/
+datadata/
+metastore_db/
+sparkextract/data/
 
 # Compiled class file
 *.class
